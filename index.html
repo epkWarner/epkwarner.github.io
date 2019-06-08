@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <section id="animation">
+        <canvas id="warp"></canvas>
+    </section>
+    <div id="mMenu" class="hide">
+        <p>&#171</p>
+    </div>
+    <nav>
+        <a id="aboutNav" href="#about">About</a>
+        <a id="worksNav" href="#works">Projects</a>
+        <a id="contactNav" href="#contact">contact</a>
+        <a id="homeNav" href="#animation">Home</a>
+        <div class="iconNav">
+            <a href="https://www.linkedin.com/in/evan-warner/" target="_blank" rel="noopener noreferrer">
+                <img class="icon" src="/assets/icons8-linkedin (3).svg">
+            </a>
+            <a href="https://github.com/epkWarner" rel="noopener noreferrer" target="_blank">
+                <img class="icon" src="/assets/icons8-github.svg">
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section id="about">
+            <h1 id="headline" class="animated headline slideOutLeft" open="slideLeft" close="slideOutLeft">
+                Who are you?
+            </h1>
+            <blockquote class="animated slideOutRight" id="manners" open="slideRight" close="slideOutRight">
+                Ma'am, sir or mx: one should
+                introduce oneself
+                before asking such a
+                question;
+                which can be done with the
+                <span>
+                    <a href="#contact" class="content">
+                        contact form
+                    </a>
+                </span>
+                below.
+            </blockquote>
+            <blockquote class="animated lift" open="drop" close="lift" id="flip">
+                But since you asked nicely...
+            </blockquote>
+            </div>
+            <div id="about2" class="flexyR">
+                <figure id="hero" class="animated hingeOut" open="hinge" close="hingeOut">
+                    <img src="assets/WarnerEvan.jpeg" class="portrait">
+                    <figcaption>
+                        <b>↑↑</b> That's me; but i have a beard now<b>↑↑</b>
+                    </figcaption>
+                </figure>
+                <div class="flexyC">
+                    <blockquote class="animated hingeOut" open="hinge" close="hingeOut">
+                        I discovered my affinity for programming via spreadsheets.
+                    </blockquote>
+                    <blockquote class="animated hingeOut" open="hinge" close="hingeOut">
+                        At first I was
+                        just trying to make my life easier, but slowly came to realize that coding is something
+                        I truly
+                        enjoy.
+                    </blockquote>
+                    <blockquote class="animated hingeOut" open="hinge" close="hingeOut">
+                        So, recently I decided to make it official.
+                    </blockquote>
+                    <blockquote class="animated hingeOut" open="hinge" close="hingeOut">
+                        I completed the full-stack Javascript course at
+                        <span>
+                            <a class="external" href="https://elevenfifty.org" target="_blank"
+                                rel="noopener noreferrer">
+                                ElevenFifty Academy
+                            </a>
+                        </span>
+                        which reinforced that coding is a passion that I want to pursue full force.
+                    </blockquote>
+                    <blockquote class="animated hingeOut" open="hinge" close="hingeOut">
+                        The result of which is the page that you are currently
+                        viewing.
+                    </blockquote>
+                    <blockquote class="animated hingeOut" open="hinge" close="hingeOut">
+                        This page is written in vanilla HTML, CSS, and Javascript with no external libraries
+                        (Other than the font). I am also competent with:
+                    </blockquote>
+                    <div id="techs" class=" animated flexyI hingeOut" open="hinge" close="hingeOut">
+                        <figure>
+                            <img class="icon" src="/assets/icons8-react-native-filled.svg">
+                            <figcaption>React</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="icon" src="/assets/icons8-angularjs.svg">
+                            <figcaption>Angular</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="icon" src="/assets/icons8-nodejs.svg">
+                            <figcaption>Node.js</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="icon" src="/assets/icons8-bootstrap.svg">
+                            <figcaption>Bootstrap</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="icon icon" src="/assets/3e5d869d8b.svg">
+                            <figcaption>Material-UI</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="icon" src="/assets/icons8-javascript-filled.svg">
+                            <figcaption>Javascript</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="icon" src="/assets/icons8-source-code-filled-50.png">
+                            <figcaption>HTML</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="icon" src="/assets/icons8-css3.svg">
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="works">
+            <h1>i did this stuff</h1>
+        </section>
+        <section class="flexyR" id="contact">
+            <div class="flexyC contInner">
+                <h1>contact me</h1>
+                <form action="https://formspree.io/evan.k.warner@gmail.com" method="POST" class="flexyX" id="form">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="_replyto" placeholder="Email">
+                    <textarea type="text" name="message" placeholder="Message"></textarea>
+                    <button type="submit" value="Send">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>copyright Evan Warner 2019</footer>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/warp.js"></script>
+    <script src="/scripts/menu.js"></script>
+</body>
+
+</html>
